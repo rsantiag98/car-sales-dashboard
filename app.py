@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-df = pd.read_csv("vehicles_us.csv")
+df = pd.read_csv("vehicles_us.csv", engine="python")
 
 df = df.dropna(subset=['model_year', 'odometer'])
 df['model_year'] = df['model_year'].astype(int)
