@@ -49,4 +49,5 @@ st.plotly_chart(fig_filtered)
 
 # Add this after loading your DataFrame
 if st.checkbox("Hide expensive cars (over $50,000)"):
-    df = df[df['price'] < 50000]
+    df = df[df['price'] < 50000]
+    
